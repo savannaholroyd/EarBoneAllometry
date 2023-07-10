@@ -113,3 +113,51 @@ fitOUMA
 fitOUMVA
 
 
+####################################################
+
+##CHAMELEONS
+
+setwd("D:/Work backup/Research Projects/Chameleons/Allometry/Data/Chameleon Measurements")
+
+#loading data
+coeff <- na.omit(read_csv("coefficientsOU.csv")) #this is using the coefficients from intraspecific allometric regressions
+#Can also try using residuals from interspecific allometry so it's more comparable with the synapsid dataset
+SpNames<- as.list(t(coeff[,1]))
+Tolley2013Trees <- "Tolley2013trimmed.trees"
+cham.tree<-read.nexus(Tolley2013Trees)
+#To gaze upon its beauty: 
+#plotTree(cham.tree,ftype="i",fsize=0.6,lwd=1)
+
+#ancestral state reconstruction
+ear <- c(0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+names(ear) <-SpNames
+mod = matrix(c(0,0,1,0),2) #this forces is to only allow 0->1 transformations since right now it thinks ear is basal
+pterMap<-make.simmap(cham.tree,ear,model=mod,nsim=1) #will want to change ER if you want a different evolutionary model
+plot(pterMap)
+
+#BM model
+fitBM <- OUwie(pterMap, chamOU,model="BMS",simmap.tree=TRUE, diagn = T)#I might use this BM model instead because I'm having trouble getting theta
+fitBM
+fitBM$eigval
+fitBM$solution.se
+
+#OU models
+chamOU <- as.data.frame(read.csv('coefficientsOU.csv'))
+
+fitOUMV<-OUwie(pterMap, chamOU,model="OUMV",simmap.tree=TRUE, diagn=T) #uses reconstructed ear evolution to fit an OU model
+#of coefficient evolution. OUMV means the model is using a different drift for each selective regime (ear or no)
+#this gives an AIC (and sample size corrected AICc) that can be compared with other models
+
+#compare to OU model with same drift and adaptive rate for each selective regime
+#fitOUM<-OUwie(pterMap, chamOU,model="OUM",simmap.tree=TRUE, diagn=T) 
+
+#compare to OU model with same drift but different adaptive rate for each selective regime
+#fitOUMA<-OUwie(pterMap, chamOU,model="OUMA",simmap.tree=TRUE, diagn=T) 
+
+#compare to OU model with different drift and adaptive rate for each selective regime
+fitOUMVA<-OUwie(pterMap, chamOU,model="OUMVA",simmap.tree=TRUE, diagn=T) 
+
+fitOUMV
+fitOUM
+fitOUMA
+fitOUMVA
