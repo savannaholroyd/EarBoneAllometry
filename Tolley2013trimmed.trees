@@ -1,0 +1,104 @@
+#NEXUS
+[written Mon Jul 27 16:33:05 PDT 2020 by Mesquite  version 3.2 (build 801) at DESKTOP-9UA6KUE/10.232.220.197]
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=16;
+	TAXLABELS
+		Ccalyptratus Cchamaeleon Cdilepis Cgracilis Csenegalensis Foustaleti Fpardalis Fverrucosus Kfischeri Tcristatus Tellioti Thoehnelii Tjacksonii Tjohnstoni Tmelleri Tmontium 
+	;
+
+END;
+
+
+BEGIN TREES;
+	Title 'Trees from "Tolley2013.trees"';
+	ID 01739253e9f71;
+	LINK Taxa = Taxa;
+	TRANSLATE
+[0] 		1 Ccalyptratus,
+[1] 		2 Cchamaeleon,
+[2] 		3 Cdilepis,
+[3] 		4 Cgracilis,
+[4] 		5 Csenegalensis,
+[5] 		6 Foustaleti,
+[6] 		7 Fpardalis,
+[7] 		8 Fverrucosus,
+[8] 		9 Kfischeri,
+[9] 		10 Tcristatus,
+[10] 		11 Tellioti,
+[11] 		12 Thoehnelii,
+[12] 		13 Tjacksonii,
+[13] 		14 Tjohnstoni,
+[14] 		15 Tmelleri,
+[15] 		16 Tmontium;
+	TREE 'TREE1+' = ((((8:10.080959042531443,6:10.080959042531443):8.868933660531873,7:18.949892703063316):28.035670721928355,(9:45.383934299032624,(((15:17.198339191527616,14:17.198339191527616):13.392727246947679,(13:13.749060550159717,(11:10.222683525259907,12:10.222683525259907):3.5263770248998103):16.842005888315576):6.065729585943654,(16:9.06045193996563,10:9.060451939965631):27.59634408445332):8.727138274613672):1.6016291259590503):0.508984196717492,((5:19.08179584755681,(3:12.010035750992687,4:12.010035750992689):7.071760096564121):3.4979008248606895,(1:13.683230736038288,2:13.683230736038288):8.89646593637921):24.914850949291665):183.2862735585891;
+
+END;
+
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1595892785706;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 6692432055890025587;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 100;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 700 472;
+			setLocation 8 8;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			showTaxa #6692432055890025587 #mesquite.lists.TaxonList.TaxonList;
+			tell It;
+				setTaxa #6692432055890025587;
+				getWindow;
+				tell It;
+					newAssistant  #mesquite.lists.TaxonListCurrPartition.TaxonListCurrPartition;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 600 400;
+					setLocation 8 8;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.lists.TaxonList.TaxonListWindow.arrow;
+					endTell;
+					setActive;
+				endTell;
+				showWindow;
+				getEmployee #mesquite.lists.ColorTaxon.ColorTaxon;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.lists.TaxonListAnnotPanel.TaxonListAnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+
