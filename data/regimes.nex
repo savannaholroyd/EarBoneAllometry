@@ -1,0 +1,73 @@
+#NEXUS
+[Data written by write.nexus.data.R, Wed Aug  2 17:29:23 2023]
+BEGIN DATA;
+  DIMENSIONS NTAX=64 NCHAR=5;
+  FORMAT DATATYPE=STANDARD MISSING=? GAP=- INTERLEAVE=NO symbols="0123456789";
+  MATRIX
+    Dimetrodon_grandis              00000
+    Dimetrodon_limbatus             00000
+    Secodontosaurus_longiramus      00000
+    Hipposaurus                     01000
+    Lemurosaurus                    01000
+    Paraburnetia                    01000
+    Biarmosuchus_tener              01000
+    Sinophoneus                     01000
+    Jonkeria                        01000
+    Tapinocaninus                   01000
+    Estemmenosuchus_uralensis       01000
+    Moschops                        01000
+    Syodon                          01000
+    Diictodon                       01111
+    Robertia                        01111
+    Pristerodon                     01111
+    Ulemosaurus                     01000
+    Endothiodon                     01111
+    Emydops                         01111
+    Eodicynodon_oosthuizeni         01111
+    Eosimops                        01111
+    Cistecephalus                   01111
+    Kembawacela                     01111
+    Cistecephaloides                01111
+    Aulacephalodon                  01001
+    Tropidostoma                    01001
+    Oudenodon                       01001
+    Dicynodon_lacerticeps           01001
+    Daptocephalus                   01001
+    Euptychognathus                 01001
+    Lystrosaurus_murrayi            01001
+    Kannemeyeria_vanhoepeni         01001
+    Placerias                       01001
+    Stahleckeria                    01001
+    Aelurognathus                   01000
+    Arctops                         01000
+    Lycaenops_n._sp.                01000
+    Sphenacodon_ferox               00000
+    Aloposaurus                     01000
+    Cyonosaurus                     01000
+    Cynariops                       01000
+    Smilesaurus                     01000
+    Lycaenops_ornatus               01000
+    Leontosaurus                    01000
+    Glanosuchus                     01101
+    Pristerognathus                 01101
+    Theriognathus                   01101
+    Hofmeyria                       01101
+    Mirotenthes                     01101
+    cf._Ictidostoma                 01101
+    Ictidosuchoides                 01101
+    Moschorhinus                    01101
+    Olivierosuchus                  01101
+    Choerosaurus                    01101
+    Tetracynodon                    01101
+    Scaloposaurus                   01101
+    Zorillodontops                  01101
+    Herpetoskylax                   01000
+    Leucocephalus                   01000
+    Proburnetia                     01000
+    Palaeohatteria                  00000
+    Pantelosaurus                   00000
+    Ulemica                         01111
+    Rhachiocephalus                 01001
+  ;
+END;
+

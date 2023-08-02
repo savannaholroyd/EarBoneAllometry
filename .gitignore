@@ -1,2 +1,4 @@
 figures/*.pdf
 output/*.*
+**/history.txt
+**/history.txt

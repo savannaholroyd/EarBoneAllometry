@@ -1,0 +1,141 @@
+#NEXUS
+[R-package APE, Wed Aug  2 17:24:20 2023]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 64;
+	TAXLABELS
+		Dimetrodon_grandis
+		Dimetrodon_limbatus
+		Secodontosaurus_longiramus
+		Hipposaurus
+		Lemurosaurus
+		Paraburnetia
+		Biarmosuchus_tener
+		Sinophoneus
+		Jonkeria
+		Tapinocaninus
+		Estemmenosuchus_uralensis
+		Moschops
+		Syodon
+		Diictodon
+		Robertia
+		Pristerodon
+		Ulemosaurus
+		Endothiodon
+		Emydops
+		Eodicynodon_oosthuizeni
+		Eosimops
+		Cistecephalus
+		Kembawacela
+		Cistecephaloides
+		Aulacephalodon
+		Tropidostoma
+		Oudenodon
+		Dicynodon_lacerticeps
+		Daptocephalus
+		Euptychognathus
+		Lystrosaurus_murrayi
+		Kannemeyeria_vanhoepeni
+		Placerias
+		Stahleckeria
+		Aelurognathus
+		Arctops
+		Lycaenops_n._sp.
+		Sphenacodon_ferox
+		Aloposaurus
+		Cyonosaurus
+		Cynariops
+		Smilesaurus
+		Lycaenops_ornatus
+		Leontosaurus
+		Glanosuchus
+		Pristerognathus
+		Theriognathus
+		Hofmeyria
+		Mirotenthes
+		cf._Ictidostoma
+		Ictidosuchoides
+		Moschorhinus
+		Olivierosuchus
+		Choerosaurus
+		Tetracynodon
+		Scaloposaurus
+		Zorillodontops
+		Herpetoskylax
+		Leucocephalus
+		Proburnetia
+		Palaeohatteria
+		Pantelosaurus
+		Ulemica
+		Rhachiocephalus
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	Dimetrodon_grandis,
+		2	Dimetrodon_limbatus,
+		3	Secodontosaurus_longiramus,
+		4	Hipposaurus,
+		5	Lemurosaurus,
+		6	Paraburnetia,
+		7	Biarmosuchus_tener,
+		8	Sinophoneus,
+		9	Jonkeria,
+		10	Tapinocaninus,
+		11	Estemmenosuchus_uralensis,
+		12	Moschops,
+		13	Syodon,
+		14	Diictodon,
+		15	Robertia,
+		16	Pristerodon,
+		17	Ulemosaurus,
+		18	Endothiodon,
+		19	Emydops,
+		20	Eodicynodon_oosthuizeni,
+		21	Eosimops,
+		22	Cistecephalus,
+		23	Kembawacela,
+		24	Cistecephaloides,
+		25	Aulacephalodon,
+		26	Tropidostoma,
+		27	Oudenodon,
+		28	Dicynodon_lacerticeps,
+		29	Daptocephalus,
+		30	Euptychognathus,
+		31	Lystrosaurus_murrayi,
+		32	Kannemeyeria_vanhoepeni,
+		33	Placerias,
+		34	Stahleckeria,
+		35	Aelurognathus,
+		36	Arctops,
+		37	Lycaenops_n._sp.,
+		38	Sphenacodon_ferox,
+		39	Aloposaurus,
+		40	Cyonosaurus,
+		41	Cynariops,
+		42	Smilesaurus,
+		43	Lycaenops_ornatus,
+		44	Leontosaurus,
+		45	Glanosuchus,
+		46	Pristerognathus,
+		47	Theriognathus,
+		48	Hofmeyria,
+		49	Mirotenthes,
+		50	cf._Ictidostoma,
+		51	Ictidosuchoides,
+		52	Moschorhinus,
+		53	Olivierosuchus,
+		54	Choerosaurus,
+		55	Tetracynodon,
+		56	Scaloposaurus,
+		57	Zorillodontops,
+		58	Herpetoskylax,
+		59	Leucocephalus,
+		60	Proburnetia,
+		61	Palaeohatteria,
+		62	Pantelosaurus,
+		63	Ulemica,
+		64	Rhachiocephalus
+	;
+	TREE * UNTITLED = [&R] (61:16.5,(62:6.3,((3:23.7,(38:0.2,(1:22.05,2:11.75):11.75):0.2):0.2,((7:11.63333333,(58:16.85555556,(4:5.877777778,(5:7.685185185,(60:3.292592593,(59:2.746296296,6:1.846296296):1.846296296):3.292592593):3.292592593):5.877777778):5.877777778):11.63333333,(((8:5.816666667,13:10.31666667):5.816666667,(11:5.816666667,(9:9.877777778,(10:1.938888889,(17:3.219444444,12:3.219444444):3.219444444):1.938888889):1.938888889):5.816666667):5.816666667,((63:13.225,(20:4.3625,((14:8.53125,(21:2.215625,15:2.215625):2.215625):2.215625,(16:8.597916667,(18:3.548958333,((19:1.216319444,(22:1.708159722,(23:1.004079861,24:1.004079861):1.004079861):1.708159722):1.216319444,((25:2.516319444,(64:0.9581597222,(26:0.4790798611,27:0.8790798611):0.4790798611):0.9581597222):0.9581597222,(28:3.280859375,((29:0.9936197917,(30:0.4968098958,31:5.396809896):0.4968098958):0.9936197917,(32:5.993619792,(33:25.5968099,34:8.196809896):8.196809896):5.993619792):0.9936197917):0.9936197917):0.9581597222):1.216319444):3.548958333):3.548958333):2.215625):4.3625):4.3625,((39:5.225,(40:3.85,(41:1.375,((42:0.725,36:1.025):0.725,((43:0.7833333333,37:0.5833333333):0.5833333333,(35:0.5833333333,44:0.7833333333):0.5833333333):0.5833333333):0.725):1.375):1.375):14.565625,((45:4.396875,46:5.896875):4.396875,(47:13.135,((48:6.0175,(49:5.15875,50:2.55875):2.55875):2.55875,(51:3.838125,((52:2.25,53:2.65):6.542083333,(54:2.146041667,(55:3.523020833,(56:1.761510417,57:1.761510417):1.761510417):3.523020833):2.146041667):2.146041667):3.838125):2.55875):2.55875):4.396875):4.396875):4.3625):5.816666667):11.63333333):0.2):0.2);
+END;

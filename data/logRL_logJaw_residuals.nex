@@ -1,0 +1,73 @@
+#NEXUS
+[Data written by write.nexus.data.R, Wed Aug  2 17:12:24 2023]
+BEGIN DATA;
+  DIMENSIONS NTAX=64 NCHAR=1;
+  FORMAT DATATYPE=CONTINUOUS MISSING=? GAP=- INTERLEAVE=NO;
+  MATRIX
+    Dimetrodon_grandis              -0.13705490346868
+    Dimetrodon_limbatus             0.177414038561214
+    Secodontosaurus_longiramus      -0.15422307263365
+    Hipposaurus                     0.198252033485939
+    Lemurosaurus                    -0.123726542032249
+    Paraburnetia                    0.0827237204817721
+    Biarmosuchus_tener              -0.0524644820545181
+    Sinophoneus                     0.0552295210862814
+    Jonkeria                        0.298903133442137
+    Tapinocaninus                   0.11518578839283
+    Estemmenosuchus_uralensis       0.241097290387293
+    Moschops                        0.478657131714462
+    Syodon                          -0.172709635038894
+    Diictodon                       0.324784329277839
+    Robertia                        0.208308211132388
+    Pristerodon                     0.227416077124999
+    Ulemosaurus                     0.233145126134665
+    Endothiodon                     0.078160881956618
+    Emydops                         0.2766407248525
+    Eodicynodon_oosthuizeni         0.160784884243938
+    Eosimops                        0.246466472129875
+    Cistecephalus                   0.387390861786124
+    Kembawacela                     0.333504048972363
+    Cistecephaloides                0.227520338787678
+    Aulacephalodon                  -0.169267890050468
+    Tropidostoma                    0.0447502248597282
+    Oudenodon                       0.0430595429824412
+    Dicynodon_lacerticeps           0.162750222002726
+    Daptocephalus                   0.139961005787145
+    Euptychognathus                 0.134811966911574
+    Lystrosaurus_murrayi            0.244247838313338
+    Kannemeyeria_vanhoepeni         -0.0342455957434971
+    Placerias                       0.207694474752029
+    Stahleckeria                    0.309752009227595
+    Aelurognathus                   0.269024859015645
+    Arctops                         0.103187254128149
+    Lycaenops_n._sp.                -0.14818529647702
+    Sphenacodon_ferox               0.269079863138526
+    Aloposaurus                     -0.00247486356275539
+    Cyonosaurus                     0.46612562973944
+    Cynariops                       0.0386464055112419
+    Smilesaurus                     0.220200480977851
+    Lycaenops_ornatus               -0.0149138856665596
+    Leontosaurus                    -0.291572403683938
+    Glanosuchus                     -0.0986999863926021
+    Pristerognathus                 -0.0269449284340531
+    Theriognathus                   0.0582837757741501
+    Hofmeyria                       0.293467826767646
+    Mirotenthes                     0.187763959204689
+    cf._Ictidostoma                 0.191396197641724
+    Ictidosuchoides                 0.0441087833141491
+    Moschorhinus                    0.274719133065622
+    Olivierosuchus                  0.151702663921506
+    Choerosaurus                    -0.0530576695687772
+    Tetracynodon                    -0.277315757663308
+    Scaloposaurus                   -0.118787160987263
+    Zorillodontops                  -0.130999697888094
+    Herpetoskylax                   0.245764035153986
+    Leucocephalus                   0.160768553086971
+    Proburnetia                     -0.0578720309863021
+    Palaeohatteria                  -0.371421026806819
+    Pantelosaurus                   -0.437747429533575
+    Ulemica                         0.0532154133589224
+    Rhachiocephalus                 0.677666904832834
+  ;
+END;
+
