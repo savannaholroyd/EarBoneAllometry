@@ -70,11 +70,11 @@ summary(m0)
 
 #ancestral state reconstruction to add regimes onto the tree
 ## Reconstruct maximum-likelihood ancestral states, using equal-rates Markov chain model
-anc_recon1 <- ace(DataSynOU$Regime1, phy = ttreeA, type = "discrete", model = "ER")
+anc_recon1 <- ace(DataSynOU$hypothesis1, phy = ttreeA, type = "discrete", model = "ER")
 MLE_idx1 <- apply(anc_recon1$lik.anc, 1, which.max)
-MLE_regimes1 <- colnames(anc_recon1$lik.anc)[MLE_idx1]
+MLE_hypothesis1 <- colnames(anc_recon1$lik.anc)[MLE_idx1]
 ttreeA1 <- ttreeA #create a new phylogeny object that I can put regime tip labels onto
-ttreeA1$node.label <- MLE_regimes1 #asign node labels based on anc recon
+ttreeA1$node.label <- MLE_hypothesis1 #asign node labels based on anc recon
 plot(ttreeA1, show.node.label = TRUE) #check that it worked
 
 ## Fit the model
@@ -85,7 +85,7 @@ m1 <- slouch.fit(phy = ttreeA1,
                  species = DataSynOU$Species,
                  response = DataSynOU$logRL,
                  direct.cov = DataSynOU$logJaw, 
-                 fixed.fact = DataSynOU$Regime1,
+                 fixed.fact = DataSynOU$hypothesis1,
                  mv.response = rep(0.055 * var(DataSynOU$logRL), length(ttreeA$tip.label)),#accounting for 5% measurement error
                  mv.direct.cov = rep(0.055 * var(DataSynOU$logRL), length(ttreeA$tip.label))) #plus 0.5% intraspecific variation
 
@@ -95,13 +95,13 @@ summary(m1) #slightly better than null
 ######
 
 ##HYPOTHESIS 2: Only basal anomodonts and therocephalians hearing
-anc_recon2 <- ace(DataSynOU$Regime2, phy = ttreeA, type = "discrete", model = "ER")
+anc_recon2 <- ace(DataSynOU$hypothesis2, phy = ttreeA, type = "discrete", model = "ER")
 MLE_idx2 <- apply(anc_recon2$lik.anc, 1, which.max)
-MLE_regimes2 <- colnames(anc_recon2$lik.anc)[MLE_idx2]
+MLE_hypothesis2 <- colnames(anc_recon2$lik.anc)[MLE_idx2]
 
 ## Create a new phylogeny object
 ttreeA2 <- ttreeA
-ttreeA2$node.label <- MLE_regimes2
+ttreeA2$node.label <- MLE_hypothesis2
 
 ## Fit the model
 m2 <- slouch.fit(phy = ttreeA2,
@@ -111,7 +111,7 @@ m2 <- slouch.fit(phy = ttreeA2,
                  species = DataSynOU$Species,
                  response = DataSynOU$logRL,
                  direct.cov = DataSynOU$logJaw, 
-                 fixed.fact = DataSynOU$Regime2,
+                 fixed.fact = DataSynOU$hypothesis2,
                  mv.response = rep(0.055 * var(DataSynOU$logRL), length(ttreeA$tip.label)),#accounting for 5% measurement error
                  mv.direct.cov = rep(0.055 * var(DataSynOU$logRL), length(ttreeA$tip.label))) #plus 0.5% intraspecific variation
 plot(m2)
@@ -120,13 +120,13 @@ summary(m2) #slightly worse than the null
 #####
 
 ##HYPOTHESIS 3: Only basal anomodonts hearing
-anc_recon3 <- ace(DataSynOU$Regime3, phy = ttreeA, type = "discrete", model = "ER")
+anc_recon3 <- ace(DataSynOU$hypothesis3, phy = ttreeA, type = "discrete", model = "ER")
 MLE_idx3 <- apply(anc_recon3$lik.anc, 1, which.max)
-MLE_regimes3 <- colnames(anc_recon3$lik.anc)[MLE_idx3]
+MLE_hypothesis3 <- colnames(anc_recon3$lik.anc)[MLE_idx3]
 
 ## Create a new phylogeny object
 ttreeA3 <- ttreeA
-ttreeA3$node.label <- MLE_regimes3
+ttreeA3$node.label <- MLE_hypothesis3
 
 ## Fit the model
 m3 <- slouch.fit(phy = ttreeA3,
@@ -136,7 +136,7 @@ m3 <- slouch.fit(phy = ttreeA3,
                  species = DataSynOU$Species,
                  response = DataSynOU$logRL,
                  direct.cov = DataSynOU$logJaw, 
-                 fixed.fact = DataSynOU$Regime3,
+                 fixed.fact = DataSynOU$hypothesis3,
                  mv.response = rep(0.055 * var(DataSynOU$logRL), length(ttreeA$tip.label)),#accounting for 5% measurement error
                  mv.direct.cov = rep(0.055 * var(DataSynOU$logRL), length(ttreeA$tip.label))) #plus 0.5% intraspecific variation
 plot(m3)
@@ -145,13 +145,13 @@ summary(m3) #just barely better than H1
 #####
 
 ##HYPOTHESIS 4: All anomodonts and theorcephalians hearing 
-anc_recon4 <- ace(DataSynOU$Regime4, phy = ttreeA, type = "discrete", model = "ER")
+anc_recon4 <- ace(DataSynOU$hypothesis4, phy = ttreeA, type = "discrete", model = "ER")
 MLE_idx4 <- apply(anc_recon4$lik.anc, 1, which.max)
-MLE_regimes4 <- colnames(anc_recon4$lik.anc)[MLE_idx4]
+MLE_hypothesis4 <- colnames(anc_recon4$lik.anc)[MLE_idx4]
 
 ## Create a new phylogeny object
 ttreeA4 <- ttreeA
-ttreeA4$node.label <- MLE_regimes1
+ttreeA4$node.label <- MLE_hypothesis1
 
 ## Fit the model
 m4 <- slouch.fit(phy = ttreeA4,
@@ -161,7 +161,7 @@ m4 <- slouch.fit(phy = ttreeA4,
                  species = DataSynOU$Species,
                  response = DataSynOU$logRL,
                  direct.cov = DataSynOU$logJaw, 
-                 fixed.fact = DataSynOU$Regime4,
+                 fixed.fact = DataSynOU$hypothesis4,
                  mv.response = rep(0.055 * var(DataSynOU$logRL), length(ttreeA$tip.label)),#accounting for 5% measurement error
                  mv.direct.cov = rep(0.055 * var(DataSynOU$logRL), length(ttreeA$tip.label))) #plus 0.5% intraspecific variation
 plot(m4)
@@ -180,14 +180,14 @@ summary(m4) #only therocephalians and all anomodonts hearing
 
 ######
 
-##HYPOTHESIS 5: Only therocephalians and basal anomodonts hearing (regime2), but also shift at therapsids (regime1)
+##HYPOTHESIS 5: Only therocephalians and basal anomodonts hearing (hypothesis2), but also shift at therapsids (hypothesis1)
 anc_recon5 <- ace(DataSynOU$Regime5, phy = ttreeA, type = "discrete", model = "ER")
 MLE_idx5 <- apply(anc_recon5$lik.anc, 1, which.max)
-MLE_regimes5 <- colnames(anc_recon5$lik.anc)[MLE_idx5]
+MLE_hypothesis5 <- colnames(anc_recon5$lik.anc)[MLE_idx5]
 
 ## Create a new phylogeny object
 ttreeA5 <- ttreeA
-ttreeA5$node.label <- MLE_regimes5
+ttreeA5$node.label <- MLE_hypothesis5
 
 ## Fit the model
 m5 <- slouch.fit(phy = ttreeA5,
@@ -207,11 +207,11 @@ summary(m5) #not great
 ##HYPOTHESIS 6: Only basal anomodonts hearing, but also shift at therapsids
 anc_recon6 <- ace(DataSynOU$Regime6, phy = ttreeA, type = "discrete", model = "ER")
 MLE_idx6 <- apply(anc_recon6$lik.anc, 1, which.max)
-MLE_regimes6 <- colnames(anc_recon6$lik.anc)[MLE_idx6]
+MLE_hypothesis6 <- colnames(anc_recon6$lik.anc)[MLE_idx6]
 
 ## Create a new phylogeny object
 ttreeA6 <- ttreeA
-ttreeA6$node.label <- MLE_regimes6
+ttreeA6$node.label <- MLE_hypothesis6
 
 ## Fit the model
 m6 <- slouch.fit(phy = ttreeA6,
@@ -232,11 +232,11 @@ summary(m6) #about as good as H1 and H3. Intercept increases in therapsids and a
 ##HYPOTHESIS 7: Only all anomodonts hearing, but also shift at therapsids
 anc_recon7 <- ace(DataSynOU$Regime7, phy = ttreeA, type = "discrete", model = "ER")
 MLE_idx7 <- apply(anc_recon7$lik.anc, 1, which.max)
-MLE_regimes7 <- colnames(anc_recon7$lik.anc)[MLE_idx7]
+MLE_hypothesis7 <- colnames(anc_recon7$lik.anc)[MLE_idx7]
 
 ## Create a new phylogeny object
 ttreeA7 <- ttreeA
-ttreeA7$node.label <- MLE_regimes7
+ttreeA7$node.label <- MLE_hypothesis7
 
 ## Fit the model
 m7 <- slouch.fit(phy = ttreeA7, 
@@ -260,11 +260,11 @@ DataSynOU <- read_csv("RL_allometry_forR_finalOU.csv")
 
 anc_recon8 <- ace(DataSynOU$Regime8, phy = ttreeA, type = "discrete", model = "ER")
 MLE_idx8 <- apply(anc_recon8$lik.anc, 1, which.max)
-MLE_regimes8 <- colnames(anc_recon8$lik.anc)[MLE_idx8]
+MLE_hypothesis8 <- colnames(anc_recon8$lik.anc)[MLE_idx8]
 
 ## Create a new phylogeny object
 ttreeA8 <- ttreeA
-ttreeA8$node.label <- MLE_regimes8
+ttreeA8$node.label <- MLE_hypothesis8
 
 ## Fit the model
 m8 <- slouch.fit(phy = ttreeA8, #use the parameters from this run for everything
@@ -337,10 +337,10 @@ cham.tree<-drop.tip(cham.tree, obj$tree_not_data) #this line is bein wierd idk t
 DataChamL <- DataChamL[match(cham.tree$tip.label, DataChamL$Species), ]
 
 ##HYPOTHESIS 0 all the same
-MLE_regimes0 <- as.character(c(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)) #just set this for everything I guess lmao
+MLE_hypothesis0 <- as.character(c(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)) #just set this for everything I guess lmao
 ## Create a new phylogeny object
 CT0 <- cham.tree
-CT0$node.label <- MLE_regimes0
+CT0$node.label <- MLE_hypothesis0
 ## Fit the model without a fixed factor for the selective regime because Regime0 is all non hearing
 mC0 <- slouch.fit(phy = CT0,
                   hillclimb = F,
@@ -357,10 +357,10 @@ summary(mC0)
 #######
 
 ##REGIME 1 Hearing different regime
-MLE_regimes1 <- as.character(c(0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1)) #just set this for everything I guess lmao
+MLE_hypothesis1 <- as.character(c(0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1)) #just set this for everything I guess lmao
 ## Create a new phylogeny object
 CT1 <- cham.tree
-CT1$node.label <- MLE_regimes1
+CT1$node.label <- MLE_hypothesis1
 plot(CT1, show.node.label = TRUE) #make sure internal nodes were assigned correctly
 mC1 <- slouch.fit(phy = CT1,
                   hillclimb = F,
@@ -392,10 +392,10 @@ summary(mbC) #this one performs pretty badly
 #######
 
 ##HYPOTHESIS 2: hearing group is its own regime, the genera Furcifer and Trioceros as separate regimes (except hearing taxa)
-MLE_regimes2 <- as.character(c(0,0,0,0,2,2,2,0,3,3,3,3,3,1,1,1,1,1,1,1)) #just set this for everything I guess lmao
+MLE_hypothesis2 <- as.character(c(0,0,0,0,2,2,2,0,3,3,3,3,3,1,1,1,1,1,1,1)) #just set this for everything I guess lmao
 ## Create a new phylogeny object
 CT2 <- cham.tree
-CT2$node.label <- MLE_regimes2
+CT2$node.label <- MLE_hypothesis2
 plot(CT2, show.node.label = TRUE) #make sure internal nodes were assigned correctly
 mC2 <- slouch.fit(phy = CT2,
                   hillclimb = TRUE,
@@ -421,10 +421,10 @@ DataChamL <- read_csv("MasterLargest.csv")
 #Reorder dataframe so the species labels match the tree tip labels
 DataChamL <- DataChamL[match(cham.tree$tip.label, DataChamL$Species), ]
 
-MLE_regimes3 <- as.character(c(0,0,0,0,2,2,2,0,3,3,3,3,3,3,1,1,1,1,1,1)) #just set this for everything I guess lmao
+MLE_hypothesis3 <- as.character(c(0,0,0,0,2,2,2,0,3,3,3,3,3,3,1,1,1,1,1,1)) #just set this for everything I guess lmao
 ## Create a new phylogeny object
 CT3 <- cham.tree
-CT3$node.label <- MLE_regimes3
+CT3$node.label <- MLE_hypothesis3
 plot(CT3, show.node.label = TRUE) #make sure internal nodes were assigned correctly
 mC3 <- slouch.fit(phy = CT3,
                   hillclimb = TRUE,
