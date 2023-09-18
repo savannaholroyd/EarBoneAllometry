@@ -1,4 +1,4 @@
-Specimen #,Species,Clade,CladeDiv,logRL,logJaw,logOrbit,logCor,Regime0,Regime1,Regime2,Regime3,Regime4,PGLSresid
+Specimen #,Species,Clade,CladeDiv,logRL,logJaw,logOrbit,logCor,Hypothesis0,Hypothesis1,Hypothesis2,Hypothesis3,Hypothesis4,PGLSresid
 MCZ2029,Dimetrodon_grandis,Pelycosauria,Pelycosauria,3.219257493,2.595809467,,,0,0,0,0,0,-0.118059467
 FMNH UC1001,Dimetrodon_limbatus,Pelycosauria,Pelycosauria,3.489074797,2.56931111,,,0,0,0,0,0,0.199163746
 AMNH FR4091,Secodontosaurus_longiramus,Pelycosauria,Pelycosauria,3.07783043,2.522068465,,,0,0,0,0,0,-0.127562908
