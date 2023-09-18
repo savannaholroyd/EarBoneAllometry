@@ -32,21 +32,21 @@ DataSynOUR <- DataSynOUR[match(ttreeA$tip.label, DataSynOUR$Species), ]
 
 #############################
 
-#I don't feel like making five million files, so just manually copy and paste the regime column you want to use from
+#I don't feel like making five million files, so just manually copy and paste the hypothesis column you want to use from
 #the "RL_allometry_forR_finalOU" file to the "DataSynOUready" excel spreadsheet and re-run code for each hypothesis
 #note that the null hypothesis is more or less represented by the OUM models. Same parameters except optimum can be
 #different, but we'd expect the optimum to basically be the same (0) for all of these anyway since the data are residuals
-DataSynOUR <- as.data.frame(read.csv("DataSynOUready.csv")) #reloading the data file once the regimes have been altered as desired
+DataSynOUR <- as.data.frame(read.csv("DataSynOUready.csv")) #reloading the data file once the hypotheses have been altered as desired
 DataSynOUR <- DataSynOUR[match(ttreeA$tip.label, DataSynOUR$Species), ]
 
 #modeling evolution towards optimum with different amounts of drift and adaptive rates
 #THIS ALL REQUIRES MOST RECENT VERSION OF R
 
 #map hearing ability as discrete character on tree
-earS <- as.numeric(DataSynOUR$regime)
+earS <- as.numeric(DataSynOUR$hypothesis)
 names(earS) <-ttreeA$tip.label
 mod = matrix(c(0,0,1,0),2) #this forces is to only allow 0->1 transformations since right now it thinks ear is basal
-#I need to not use the above line when doing regime 2 because I need to test for a loss in bidentalians
+#I need to not use the above line when doing hypothesis 2 because I need to test for a loss in bidentalians
 ttreeAR<-make.simmap(ttreeA,earS,nsim=1, model = mod) #add for when it reconstructs the ear as basal
 #check the tree for troubleshooting
 #do this before running OU analysis because sometimes it reconstructs the character states weirdly
@@ -58,7 +58,7 @@ fitOUMV<-OUwie(ttreeAR, DataSynOUR,model="OUMV",simmap.tree=TRUE) #uses hypothes
 #this gives an AIC (and sample size corrected AICc) that can be compared with other models
 
 #compare to OU model with same drift and adaptive rate for each selective regime
-#this is the only one that can be reported for regime0 since there's only one regime
+#this is the only one that can be reported for hypothesis0 since there's only one regime
 fitOUM<-OUwie(ttreeAR, DataSynOUR,model="OUM",simmap.tree=TRUE) 
 
 #compare to OU model with same drift but different adaptive rate for each selective regime
@@ -82,11 +82,11 @@ library(OUwie)
 DataSynOURS <- as.data.frame(read.csv("DataSynOUR_sub.csv"))
 
 #map hearing ability as discrete character on tree
-earS <- as.numeric(DataSynOURS$regime)
+earS <- as.numeric(DataSynOURS$hypothesis)
 names(earS) <-ttreeA$tip.label
 mod = matrix(c(0,0,1,0),2) #this forces is to only allow 0->1 transformations since right now it thinks ear is basal
-#I need to not use the above line when doing regime 2 because I need to show a loss in bidentalians
-ttreeAR<-make.simmap(ttreeA,earS,nsim=1, model = mod) #add for when regimes could make it think the ear is basal
+#I need to not use the above line when doing hypothesis 2 because I need to show a loss in bidentalians
+ttreeAR<-make.simmap(ttreeA,earS,nsim=1, model = mod) #add for when distribution of regimes could make it think the ear is basal
 #check the tree for troubleshooting
 #do this before running OU analysis because sometimes it reconstructs a weird tree
 cols<-setNames(c("blue","red"),c(0,1))
@@ -97,7 +97,7 @@ fitOUMV<-OUwie(ttreeAR, DataSynOURS,model="OUMV",simmap.tree=TRUE) #uses hypothe
 #this gives an AIC (and sample size corrected AICc) that can be compared with other models
 
 #compare to OU model with same drift and adaptive rate for each selective regime
-#this is the only one that can be reported for regime0 since there's only one regime
+#this is the only one that can be reported for hypothesis0 since there's only one regime
 fitOUM<-OUwie(ttreeAR, DataSynOURS,model="OUM",simmap.tree=TRUE) 
 
 #compare to OU model with same drift but different adaptive rate for each selective regime
