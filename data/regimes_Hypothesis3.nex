@@ -1,0 +1,73 @@
+#NEXUS
+[Data written by write.nexus.data.R, Mon Sep 25 11:25:46 2023]
+BEGIN DATA;
+  DIMENSIONS NTAX=64 NCHAR=1;
+  FORMAT DATATYPE=STANDARD MISSING=? GAP=- INTERLEAVE=NO symbols="01";
+  MATRIX
+    Dimetrodon_grandis              0
+    Dimetrodon_limbatus             0
+    Secodontosaurus_longiramus      0
+    Hipposaurus                     0
+    Lemurosaurus                    0
+    Paraburnetia                    0
+    Biarmosuchus_tener              0
+    Sinophoneus                     0
+    Jonkeria                        0
+    Tapinocaninus                   0
+    Estemmenosuchus_uralensis       0
+    Moschops                        0
+    Syodon                          0
+    Diictodon                       1
+    Robertia                        1
+    Pristerodon                     1
+    Ulemosaurus                     0
+    Endothiodon                     1
+    Emydops                         1
+    Eodicynodon_oosthuizeni         1
+    Eosimops                        1
+    Cistecephalus                   1
+    Kembawacela                     1
+    Cistecephaloides                1
+    Aulacephalodon                  0
+    Tropidostoma                    0
+    Oudenodon                       0
+    Dicynodon_lacerticeps           0
+    Daptocephalus                   0
+    Euptychognathus                 0
+    Lystrosaurus_murrayi            0
+    Kannemeyeria_vanhoepeni         0
+    Placerias                       0
+    Stahleckeria                    0
+    Aelurognathus                   0
+    Arctops                         0
+    Lycaenops_n._sp.                0
+    Sphenacodon_ferox               0
+    Aloposaurus                     0
+    Cyonosaurus                     0
+    Cynariops                       0
+    Smilesaurus                     0
+    Lycaenops_ornatus               0
+    Leontosaurus                    0
+    Glanosuchus                     0
+    Pristerognathus                 0
+    Theriognathus                   0
+    Hofmeyria                       0
+    Mirotenthes                     0
+    cf._Ictidostoma                 0
+    Ictidosuchoides                 0
+    Moschorhinus                    0
+    Olivierosuchus                  0
+    Choerosaurus                    0
+    Tetracynodon                    0
+    Scaloposaurus                   0
+    Zorillodontops                  0
+    Herpetoskylax                   0
+    Leucocephalus                   0
+    Proburnetia                     0
+    Palaeohatteria                  0
+    Pantelosaurus                   0
+    Ulemica                         1
+    Rhachiocephalus                 0
+  ;
+END;
+
