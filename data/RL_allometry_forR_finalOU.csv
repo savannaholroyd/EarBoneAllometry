@@ -1,65 +1,65 @@
 Specimen #,Species,Clade,CladeDiv,logRL,logJaw,logOrbit,logCor,Hypothesis0,Hypothesis1,Hypothesis2,Hypothesis3,Hypothesis4,PGLSresid
-MCZ2029,Dimetrodon_grandis,Pelycosauria,Pelycosauria,3.219257493,2.595809467,,,0,0,0,0,0,-0.118059467
-FMNH UC1001,Dimetrodon_limbatus,Pelycosauria,Pelycosauria,3.489074797,2.56931111,,,0,0,0,0,0,0.199163746
-AMNH FR4091,Secodontosaurus_longiramus,Pelycosauria,Pelycosauria,3.07783043,2.522068465,,,0,0,0,0,0,-0.127562908
-SAM PK8950,Hipposaurus,Biarmosuchia,Biarmosuchia,2.861657453,2.184606267,1.65069598,,0,1,0,0,0,0.259988425
-NMQR 1702,Lemurosaurus,Biarmosuchia,Biarmosuchia,2.381230194,2.090575455,,,0,1,0,0,0,-0.052216475
-SAM PK K10037,Paraburnetia,Biarmosuchia,Biarmosuchia,2.816196211,2.226187323,1.462547729,,0,1,0,0,0,0.140138127
-PIN1758/8,Biarmosuchus_tener,Biarmosuchia,Biarmosuchia,2.815660084,2.306096122,,,0,1,0,0,0,-0.003355892
-IVPP V18120,Sinophoneus,Dinocephalia,Dinocephalia,2.478107663,2.041866203,,,0,1,0,0,0,0.131802486
-AMNH FR5633,Jonkeria,Dinocephalia,Dinocephalia,3.919906382,2.752889319,,,0,1,0,0,0,0.301571501
-QR2986,Tapinocaninus,Dinocephalia,Dinocephalia,3.581122244,2.660865478,1.98569586,,0,1,0,0,0,0.127419225
-PIN1758/4,Estemmenosuchus_uralensis,Dinocephalia,Dinocephalia,3.839119339,2.739251207,,,0,1,0,0,0,0.24518322
-AMNH FR5550,Moschops,Dinocephalia,Dinocephalia,3.530247657,2.414973348,1.658450242,,0,1,0,0,0,0.516448892
-PIN157/2,Syodon,Dinocephalia,Dinocephalia,2.812183798,2.375392194,,,0,1,0,0,0,-0.130803762
-UCMP41757,Diictodon,Anomodontia,non-bidentalians,2.680983298,2.002295683,1.377488383,0.743956372,0,1,1,1,1,0.405470302
-BPI/1/7934,Robertia,Anomodontia,non-bidentalians,2.245384335,1.812913357,1.342422681,,0,1,1,1,1,0.30867881
-BP/1/6685,Pristerodon,Anomodontia,non-bidentalians,2.181105804,1.763427994,1.230448921,0.689885759,0,1,1,1,1,0.332930244
-PIN2207/2,Ulemosaurus,Dinocephalia,Dinocephalia,3.495134825,2.539833995,,,0,1,0,0,0,0.25795872
-SAM PK11131,Endothiodon,Anomodontia,non-bidentalians,3.315229735,2.525044807,1.755874856,0.922325744,0,1,1,1,1,0.104511682
-BPI/1/1307,Emydops,Anomodontia,non-bidentalians,2.121714101,1.698970004,1.204119983,0.421505212,0,1,1,1,1,0.388854733
-BPI/1/6230,Eodicynodon_oosthuizeni,Anomodontia,non-bidentalians,2.062179694,1.73239376,,0.418748616,0,1,1,1,1,0.269524787
-BPI/1/6674,Eosimops,Anomodontia,non-bidentalians,2.424029555,1.896284847,,0.809768395,0,1,1,1,1,0.338171338
-BPI/1/253,Cistecephalus,Anomodontia,non-bidentalians,2.031626567,1.579783597,1.113943352,,0,1,1,1,1,0.511993248
-NHCC LB18,Kembawacela,Anomodontia,non-bidentalians,1.944402616,1.55999979,,0.272166625,0,1,1,1,1,0.460162788
-SAM_PK_K6243,Cistecephaloides,Anomodontia,non-bidentalians,2.011891711,1.662946614,0.88422877,0.350693717,0,1,1,1,1,0.343478662
-UC 1522,Aulacephalodon,Anomodontia,Bidentalia,3.10031874,2.544342367,,1.204282813,0,1,0,0,1,-0.144922902
-CM RS20,Tropidostoma,Anomodontia,Bidentalia,2.843556485,2.264959418,,0.747124255,0,1,0,0,1,0.098134613
-UC 2503,Oudenodon,Anomodontia,Bidentalia,2.980834027,2.34742962,,0.640848991,0,1,0,0,1,0.087871879
-BPI/1/2098,Dicynodon_lacerticeps,Anomodontia,Bidentalia,3.340696088,2.489958479,1.908485019,,0,1,0,0,1,0.192747937
-NHCC LB218,Daptocephalus,Anomodontia,Bidentalia,3.053059094,2.3327855,,1.127687788,0,1,0,0,1,0.186295469
-NHCC LB200,Euptychognathus,Anomodontia,Bidentalia,2.92640208,2.260677021,,0.722666822,0,1,0,0,1,0.188641473
-UCMP31360,Lystrosaurus_murrayi,Anomodontia,Bidentalia,2.52517054,1.957623248,1.627222434,,0,1,0,0,1,0.329577117
-UCMP42916,Kannemeyeria_vanhoepeni,Anomodontia,Bidentalia,3.156534614,2.497574975,,1.06160325,0,1,0,0,1,-0.005039548
-UCMP137369,Placerias,Anomodontia,Bidentalia,3.647640047,2.64544128,2.006294858,,0,1,0,0,1,0.221531121
-AMNH FR3857,Stahleckeria,Anomodontia,Bidentalia,3.811418144,2.68206913,,1.227603936,0,1,0,0,1,0.319781512
-NHCC LB350,Aelurognathus,Gorgonopsia,Gorgonopsia,3.283078056,2.392696953,,,0,1,0,0,0,0.309132054
-NHCC LB396,Arctops,Gorgonopsia,Gorgonopsia,3.121965681,2.395501124,,1.447886415,0,1,0,0,0,0.14300298
-NHCC LB178,Lycaenops_n._sp.,Gorgonopsia,Gorgonopsia,2.686201487,2.286074554,,,0,1,0,0,0,-0.096995641
-UCMP83459,Sphenacodon_ferox,Pelycosauria,Pelycosauria,3.356306049,2.436121205,,,0,0,0,0,0,0.304673489
-AMNH FR5317,Aloposaurus,Gorgonopsia,Gorgonopsia,2.357774885,2.004699604,1.249051529,1.277586296,0,1,0,0,0,0.077961243
-BPI/1/2109,Cyonosaurus,Gorgonopsia,Gorgonopsia,3.198118558,2.225309282,,,0,1,0,0,0,0.523631301
-MB.R.999,Cynariops,Gorgonopsia,Gorgonopsia,2.524019537,2.078953634,,1.239549721,0,1,0,0,0,0.111364458
-BPI/1/2465,Smilesaurus,Gorgonopsia,Gorgonopsia,3.346640453,2.459392488,1.785329835,,0,1,0,0,0,0.253375262
-BP/1/881,Lycaenops_ornatus,Gorgonopsia,Gorgonopsia,2.851955718,2.305351369,1.643452676,,0,1,0,0,0,0.034272114
-BPI/1/743,Leontosaurus,Gorgonopsia,Gorgonopsia,2.90276686,2.499687083,1.62324929,1.578295305,0,1,0,0,0,-0.262585891
-AMNH FR5559,Glanosuchus,Therocephalia,Therocephalia,2.96830905,2.424123409,1.536192168,,0,1,1,0,1,-0.061859295
-SAM_PK_K11942,Pristerognathus,Therocephalia,Therocephalia,3.07221018,2.443200382,1.746011108,1.601234047,0,1,1,0,1,0.00791288
-BPI/1/844,Theriognathus,Therocephalia,Therocephalia,2.651604581,2.1430148,1.380211242,1.481643246,0,1,1,0,1,0.124343234
-TM254,Hofmeyria,Therocephalia,Therocephalia,2.353267862,1.826398782,1.12515583,1.286680969,0,1,1,0,1,0.392436735
-UCMP40467,Mirotenthes,Therocephalia,Therocephalia,2.578628897,2.02286808,,1.26131046,0,1,1,0,1,0.266311612
-BPI/1/3155,cf._Ictidostoma,Therocephalia,Therocephalia,2.474708574,1.959041392,1.255272505,1.154849842,0,1,1,0,1,0.276578073
-NMQR 385,Ictidosuchoides,Therocephalia,Therocephalia,2.363126653,1.980230691,1.16879202,1.020816887,0,1,1,0,1,0.127088218
-NMQR 3835,Moschorhinus,Therocephalia,Therocephalia,3.261608977,2.376576957,1.576571684,1.345471754,0,1,1,0,1,0.31650186
-NMQR 3605,Olivierosuchus,Therocephalia,Therocephalia,2.613406252,2.064907027,1.311117843,1.18783082,0,1,1,0,1,0.225880738
-SAM PK8797,Choerosaurus,Therocephalia,Therocephalia,2.173244559,1.925208921,1.212187604,0.922907025,0,1,1,0,1,0.035640794
-BPI/1/2710,Tetracynodon,Therocephalia,Therocephalia,1.803463944,1.838849091,1.176091259,0.872103804,0,1,1,0,1,-0.17964095
-SAM PK11543,Scaloposaurus,Therocephalia,Therocephalia,1.691670318,1.678427322,1.126780577,,0,1,1,0,1,-0.004437922
-SAM_PK_K1392,Zorillodontops,Therocephalia,Therocephalia,1.50801769,1.576686805,1.048053173,0.826113693,0,1,1,0,1,-0.006075427
-CGP/1:67,Herpetoskylax,Biarmosuchia,Biarmosuchia,2.843035837,2.145359505,1.535850875,,0,1,0,0,0,0.311579782
-SAM PK 11112,Leucocephalus,Biarmosuchia,Biarmosuchia,2.582968526,2.041463746,1.470439894,,0,1,0,0,0,0.23738335
-PIN2416/1,Proburnetia,Biarmosuchia,Biarmosuchia,2.574397079,2.166128534,,,0,1,0,0,0,0.005784958
-SS 13315 13317,Palaeohatteria,Pelycosauria,Pelycosauria,1.697708721,1.831935467,,,0,0,0,0,0,-0.273027609
-RS 14752,Pantelosaurus,Pelycosauria,Pelycosauria,2.25561498,2.202384137,,,0,0,0,0,0,-0.377858891
-PIN157/1112,Ulemica,Anomodontia,non-bidentalians,2.785939555,2.225743218,,,0,1,1,1,1,0.11067598
-TM 4456,Rhachiocephalus,Anomodontia,Bidentalia,3.876623328,2.50242712,,,0,1,0,0,1,0.706368614
+MCZ2029,Dimetrodon_grandis,Pelycosauria,Pelycosauria,3.219257493,2.595809467,,,non-hearing,non-hearing,non-hearing,non-hearing,non-hearing,-0.118059467
+FMNH UC1001,Dimetrodon_limbatus,Pelycosauria,Pelycosauria,3.489074797,2.56931111,,,non-hearing,non-hearing,non-hearing,non-hearing,non-hearing,0.199163746
+AMNH FR4091,Secodontosaurus_longiramus,Pelycosauria,Pelycosauria,3.07783043,2.522068465,,,non-hearing,non-hearing,non-hearing,non-hearing,non-hearing,-0.127562908
+SAM PK8950,Hipposaurus,Biarmosuchia,Biarmosuchia,2.861657453,2.184606267,1.65069598,,non-hearing,hearing,non-hearing,non-hearing,non-hearing,0.259988425
+NMQR 1702,Lemurosaurus,Biarmosuchia,Biarmosuchia,2.381230194,2.090575455,,,non-hearing,hearing,non-hearing,non-hearing,non-hearing,-0.052216475
+SAM PK K10037,Paraburnetia,Biarmosuchia,Biarmosuchia,2.816196211,2.226187323,1.462547729,,non-hearing,hearing,non-hearing,non-hearing,non-hearing,0.140138127
+PIN1758/8,Biarmosuchus_tener,Biarmosuchia,Biarmosuchia,2.815660084,2.306096122,,,non-hearing,hearing,non-hearing,non-hearing,non-hearing,-0.003355892
+IVPP V18120,Sinophoneus,Dinocephalia,Dinocephalia,2.478107663,2.041866203,,,non-hearing,hearing,non-hearing,non-hearing,non-hearing,0.131802486
+AMNH FR5633,Jonkeria,Dinocephalia,Dinocephalia,3.919906382,2.752889319,,,non-hearing,hearing,non-hearing,non-hearing,non-hearing,0.301571501
+QR2986,Tapinocaninus,Dinocephalia,Dinocephalia,3.581122244,2.660865478,1.98569586,,non-hearing,hearing,non-hearing,non-hearing,non-hearing,0.127419225
+PIN1758/4,Estemmenosuchus_uralensis,Dinocephalia,Dinocephalia,3.839119339,2.739251207,,,non-hearing,hearing,non-hearing,non-hearing,non-hearing,0.24518322
+AMNH FR5550,Moschops,Dinocephalia,Dinocephalia,3.530247657,2.414973348,1.658450242,,non-hearing,hearing,non-hearing,non-hearing,non-hearing,0.516448892
+PIN157/2,Syodon,Dinocephalia,Dinocephalia,2.812183798,2.375392194,,,non-hearing,hearing,non-hearing,non-hearing,non-hearing,-0.130803762
+UCMP41757,Diictodon,Anomodontia,non-bidentalians,2.680983298,2.002295683,1.377488383,0.743956372,non-hearing,hearing,hearing,hearing,hearing,0.405470302
+BPI/1/7934,Robertia,Anomodontia,non-bidentalians,2.245384335,1.812913357,1.342422681,,non-hearing,hearing,hearing,hearing,hearing,0.30867881
+BP/1/6685,Pristerodon,Anomodontia,non-bidentalians,2.181105804,1.763427994,1.230448921,0.689885759,non-hearing,hearing,hearing,hearing,hearing,0.332930244
+PIN2207/2,Ulemosaurus,Dinocephalia,Dinocephalia,3.495134825,2.539833995,,,non-hearing,hearing,non-hearing,non-hearing,non-hearing,0.25795872
+SAM PK11131,Endothiodon,Anomodontia,non-bidentalians,3.315229735,2.525044807,1.755874856,0.922325744,non-hearing,hearing,hearing,hearing,hearing,0.104511682
+BPI/1/1307,Emydops,Anomodontia,non-bidentalians,2.121714101,1.698970004,1.204119983,0.421505212,non-hearing,hearing,hearing,hearing,hearing,0.388854733
+BPI/1/6230,Eodicynodon_oosthuizeni,Anomodontia,non-bidentalians,2.062179694,1.73239376,,0.418748616,non-hearing,hearing,hearing,hearing,hearing,0.269524787
+BPI/1/6674,Eosimops,Anomodontia,non-bidentalians,2.424029555,1.896284847,,0.809768395,non-hearing,hearing,hearing,hearing,hearing,0.338171338
+BPI/1/253,Cistecephalus,Anomodontia,non-bidentalians,2.031626567,1.579783597,1.113943352,,non-hearing,hearing,hearing,hearing,hearing,0.511993248
+NHCC LB18,Kembawacela,Anomodontia,non-bidentalians,1.944402616,1.55999979,,0.272166625,non-hearing,hearing,hearing,hearing,hearing,0.460162788
+SAM_PK_K6243,Cistecephaloides,Anomodontia,non-bidentalians,2.011891711,1.662946614,0.88422877,0.350693717,non-hearing,hearing,hearing,hearing,hearing,0.343478662
+UC 1522,Aulacephalodon,Anomodontia,Bidentalia,3.10031874,2.544342367,,1.204282813,non-hearing,hearing,non-hearing,non-hearing,hearing,-0.144922902
+CM RS20,Tropidostoma,Anomodontia,Bidentalia,2.843556485,2.264959418,,0.747124255,non-hearing,hearing,non-hearing,non-hearing,hearing,0.098134613
+UC 2503,Oudenodon,Anomodontia,Bidentalia,2.980834027,2.34742962,,0.640848991,non-hearing,hearing,non-hearing,non-hearing,hearing,0.087871879
+BPI/1/2098,Dicynodon_lacerticeps,Anomodontia,Bidentalia,3.340696088,2.489958479,1.908485019,,non-hearing,hearing,non-hearing,non-hearing,hearing,0.192747937
+NHCC LB218,Daptocephalus,Anomodontia,Bidentalia,3.053059094,2.3327855,,1.127687788,non-hearing,hearing,non-hearing,non-hearing,hearing,0.186295469
+NHCC LB200,Euptychognathus,Anomodontia,Bidentalia,2.92640208,2.260677021,,0.722666822,non-hearing,hearing,non-hearing,non-hearing,hearing,0.188641473
+UCMP31360,Lystrosaurus_murrayi,Anomodontia,Bidentalia,2.52517054,1.957623248,1.627222434,,non-hearing,hearing,non-hearing,non-hearing,hearing,0.329577117
+UCMP42916,Kannemeyeria_vanhoepeni,Anomodontia,Bidentalia,3.156534614,2.497574975,,1.06160325,non-hearing,hearing,non-hearing,non-hearing,hearing,-0.005039548
+UCMP137369,Placerias,Anomodontia,Bidentalia,3.647640047,2.64544128,2.006294858,,non-hearing,hearing,non-hearing,non-hearing,hearing,0.221531121
+AMNH FR3857,Stahleckeria,Anomodontia,Bidentalia,3.811418144,2.68206913,,1.227603936,non-hearing,hearing,non-hearing,non-hearing,hearing,0.319781512
+NHCC LB350,Aelurognathus,Gorgonopsia,Gorgonopsia,3.283078056,2.392696953,,,non-hearing,hearing,non-hearing,non-hearing,non-hearing,0.309132054
+NHCC LB396,Arctops,Gorgonopsia,Gorgonopsia,3.121965681,2.395501124,,1.447886415,non-hearing,hearing,non-hearing,non-hearing,non-hearing,0.14300298
+NHCC LB178,Lycaenops_n._sp.,Gorgonopsia,Gorgonopsia,2.686201487,2.286074554,,,non-hearing,hearing,non-hearing,non-hearing,non-hearing,-0.096995641
+UCMP83459,Sphenacodon_ferox,Pelycosauria,Pelycosauria,3.356306049,2.436121205,,,non-hearing,non-hearing,non-hearing,non-hearing,non-hearing,0.304673489
+AMNH FR5317,Aloposaurus,Gorgonopsia,Gorgonopsia,2.357774885,2.004699604,1.249051529,1.277586296,non-hearing,hearing,non-hearing,non-hearing,non-hearing,0.077961243
+BPI/1/2109,Cyonosaurus,Gorgonopsia,Gorgonopsia,3.198118558,2.225309282,,,non-hearing,hearing,non-hearing,non-hearing,non-hearing,0.523631301
+MB.R.999,Cynariops,Gorgonopsia,Gorgonopsia,2.524019537,2.078953634,,1.239549721,non-hearing,hearing,non-hearing,non-hearing,non-hearing,0.111364458
+BPI/1/2465,Smilesaurus,Gorgonopsia,Gorgonopsia,3.346640453,2.459392488,1.785329835,,non-hearing,hearing,non-hearing,non-hearing,non-hearing,0.253375262
+BP/1/881,Lycaenops_ornatus,Gorgonopsia,Gorgonopsia,2.851955718,2.305351369,1.643452676,,non-hearing,hearing,non-hearing,non-hearing,non-hearing,0.034272114
+BPI/1/743,Leontosaurus,Gorgonopsia,Gorgonopsia,2.90276686,2.499687083,1.62324929,1.578295305,non-hearing,hearing,non-hearing,non-hearing,non-hearing,-0.262585891
+AMNH FR5559,Glanosuchus,Therocephalia,Therocephalia,2.96830905,2.424123409,1.536192168,,non-hearing,hearing,hearing,non-hearing,hearing,-0.061859295
+SAM_PK_K11942,Pristerognathus,Therocephalia,Therocephalia,3.07221018,2.443200382,1.746011108,1.601234047,non-hearing,hearing,hearing,non-hearing,hearing,0.00791288
+BPI/1/844,Theriognathus,Therocephalia,Therocephalia,2.651604581,2.1430148,1.380211242,1.481643246,non-hearing,hearing,hearing,non-hearing,hearing,0.124343234
+TM254,Hofmeyria,Therocephalia,Therocephalia,2.353267862,1.826398782,1.12515583,1.286680969,non-hearing,hearing,hearing,non-hearing,hearing,0.392436735
+UCMP40467,Mirotenthes,Therocephalia,Therocephalia,2.578628897,2.02286808,,1.26131046,non-hearing,hearing,hearing,non-hearing,hearing,0.266311612
+BPI/1/3155,cf._Ictidostoma,Therocephalia,Therocephalia,2.474708574,1.959041392,1.255272505,1.154849842,non-hearing,hearing,hearing,non-hearing,hearing,0.276578073
+NMQR 385,Ictidosuchoides,Therocephalia,Therocephalia,2.363126653,1.980230691,1.16879202,1.020816887,non-hearing,hearing,hearing,non-hearing,hearing,0.127088218
+NMQR 3835,Moschorhinus,Therocephalia,Therocephalia,3.261608977,2.376576957,1.576571684,1.345471754,non-hearing,hearing,hearing,non-hearing,hearing,0.31650186
+NMQR 3605,Olivierosuchus,Therocephalia,Therocephalia,2.613406252,2.064907027,1.311117843,1.18783082,non-hearing,hearing,hearing,non-hearing,hearing,0.225880738
+SAM PK8797,Choerosaurus,Therocephalia,Therocephalia,2.173244559,1.925208921,1.212187604,0.922907025,non-hearing,hearing,hearing,non-hearing,hearing,0.035640794
+BPI/1/2710,Tetracynodon,Therocephalia,Therocephalia,1.803463944,1.838849091,1.176091259,0.872103804,non-hearing,hearing,hearing,non-hearing,hearing,-0.17964095
+SAM PK11543,Scaloposaurus,Therocephalia,Therocephalia,1.691670318,1.678427322,1.126780577,,non-hearing,hearing,hearing,non-hearing,hearing,-0.004437922
+SAM_PK_K1392,Zorillodontops,Therocephalia,Therocephalia,1.50801769,1.576686805,1.048053173,0.826113693,non-hearing,hearing,hearing,non-hearing,hearing,-0.006075427
+CGP/1:67,Herpetoskylax,Biarmosuchia,Biarmosuchia,2.843035837,2.145359505,1.535850875,,non-hearing,hearing,non-hearing,non-hearing,non-hearing,0.311579782
+SAM PK 11112,Leucocephalus,Biarmosuchia,Biarmosuchia,2.582968526,2.041463746,1.470439894,,non-hearing,hearing,non-hearing,non-hearing,non-hearing,0.23738335
+PIN2416/1,Proburnetia,Biarmosuchia,Biarmosuchia,2.574397079,2.166128534,,,non-hearing,hearing,non-hearing,non-hearing,non-hearing,0.005784958
+SS 13315 13317,Palaeohatteria,Pelycosauria,Pelycosauria,1.697708721,1.831935467,,,non-hearing,non-hearing,non-hearing,non-hearing,non-hearing,-0.273027609
+RS 14752,Pantelosaurus,Pelycosauria,Pelycosauria,2.25561498,2.202384137,,,non-hearing,non-hearing,non-hearing,non-hearing,non-hearing,-0.377858891
+PIN157/1112,Ulemica,Anomodontia,non-bidentalians,2.785939555,2.225743218,,,non-hearing,hearing,hearing,hearing,hearing,0.11067598
+TM 4456,Rhachiocephalus,Anomodontia,Bidentalia,3.876623328,2.50242712,,,non-hearing,hearing,non-hearing,non-hearing,hearing,0.706368614
