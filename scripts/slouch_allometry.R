@@ -103,7 +103,8 @@ DataSynOU %>%
 tr1 <- as_tibble(ttreeA)
 for (i in 1:4){
   ans <- ape::ace(DataSynOU[[paste0("Hypothesis", i)]], ttreeA, type = "discrete")
-  internal_states <- c(0, 1)[apply(ans$lik.anc, 1, which.max)]
+  state_space <- colnames(ans$lik.anc)
+  internal_states <- state_space[apply(ans$lik.anc, 1, which.max)]
   tip_states <- DataSynOU[[paste0("Hypothesis", i)]]
   tr1[[paste0("regime",i)]] <- c(tip_states, internal_states)
 }
@@ -162,6 +163,12 @@ for (i in 1:4){
   dfs[[i]] <- df1
 }
 df2 <- bind_rows(dfs)
+
+## print posterior probabilities that zeta > 0.0
+for (i in 1:4){
+  pp <- sum(dfs[[i]]$zeta_diff > 0.0) / nrow(dfs[[i]])
+  print(pp)
+}
 
 zeta_plots <- list()
 for (i in 1:4){
