@@ -48,15 +48,16 @@ DataSynOU <- DataSynOU[match(ttreeA$tip.label, DataSynOU$Species), ]
 ## Fit the model without a fixed factor for the selective regime because they're all the same regime
 tree_height <- max(node.depth.edgelength(ttreeA))
 
+
 m0 <- slouch.fit(phy = ttreeA,
                  hillclimb = T,
-                 #vy_values = seq(0.001, 0.15, length.out = 60),
-                 #hl_values = seq(0.1, 150, length.out = 60),
+                 #vy_values = seq(0.001, 0.15, length.out = 30),
+                 #hl_values = seq(0.1, 150, length.out = 30),
                  species = DataSynOU$Species,
                  response = DataSynOU$logRL,
                  direct.cov = DataSynOU$logJaw,
-                 mv.response = rep(0.055 * var(DataSynOU$logRL), length(ttreeA$tip.label)), #plus 5.5% intraspecific variation
-                 mv.direct.cov = rep(0.055 * var(DataSynOU$logJaw), length(ttreeA$tip.label))) #plus 5.5% intraspecific variation
+                 mv.response = rep(0.1 * var(DataSynOU$logRL), length(ttreeA$tip.label)), #plus 5.5% intraspecific variation
+                 mv.direct.cov = rep(0.1 * var(DataSynOU$logJaw), length(ttreeA$tip.label))) #plus 5.5% intraspecific variation
 plot(m0)
 summary(m0)
 
