@@ -26,7 +26,6 @@ DataCham <- DataCham[match(ChamTree$tip.label, DataCham$Species), ]
 ## Fit the model to get residuals
 tree_height <- max(node.depth.edgelength(ChamTree))
 
-
 m0 <- slouch.fit(phy = ChamTree,
                  hillclimb = T,
                  vy_values = seq(0.0001, 0.05, length.out = 30),
@@ -63,3 +62,8 @@ for (i in 1:length(ChamTree$tip.label)){
   l2[splab] <- list(dat2)
 }
 ape::write.nexus.data(l2, file = paste0("data/chameleons/regimes.nex"), format = "standard")
+
+
+
+
+
