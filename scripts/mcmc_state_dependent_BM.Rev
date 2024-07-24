@@ -123,7 +123,7 @@ mymcmc = mcmc(mymodel, monitors, moves, nruns=2, combine="mixed")
 
 ### run the MCMC ###
 mymcmc.burnin(generations=1000, tuningInterval=100)
-mymcmc.run(generations=50000)
+mymcmc.run(generations=500000)
 
 
 
