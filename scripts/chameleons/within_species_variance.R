@@ -24,6 +24,17 @@ df2 <- read.csv("data/chameleons/largest_chameleons.csv") %>%
 dplyr::left_join(species_df, df2, by = "Species")
 
 
+## overall estimate of the within-species variance
+sum(species_df$logpter_var * species_df$sample_size) / sum(species_df$sample_size)
+
+
+
+
+
+
+
+
+
 
 
 
