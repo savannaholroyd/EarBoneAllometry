@@ -1,25 +1,17 @@
 #Testing for different allometric intercepts among chameleons
 
 library(ape)
-library(phytools)
-library(readr)
 library(tidyverse)
-library(geiger)
 library(slouch)
-library(ggphylomorpho)
 
 ############################
 
-DataCham <- read_csv("data/chameleons/largest_chameleons.csv")
-
+DataCham <- read_csv("data/chameleons/chameleons_speciesdata.csv")
 
 ChamTree<-read.nexus("data/chameleons/Tolley2013trimmedL.trees")
-#ChamTree2<-read.nexus("data/Tolley2013trimmed.trees")
-#plotTree(ChamTree,ftype="i",fsize=0.6,lwd=1) #To gaze upon its beauty
 
 ## Reorder dataframe so the species labels match the tree tip labels
 DataCham <- DataCham[match(ChamTree$tip.label, DataCham$Species), ]
-#DataCham$Species == ChamTree$tip.label
 
 ###########################
 
@@ -28,13 +20,15 @@ tree_height <- max(node.depth.edgelength(ChamTree))
 
 m0 <- slouch.fit(phy = ChamTree,
                  hillclimb = T,
-                 vy_values = seq(0.0001, 0.05, length.out = 30),
-                 hl_values = seq(0.001, 100, length.out = 30),
+                 vy_values = seq(0.00001, 0.004, length.out = 30),
+                 hl_values = seq(0.0001, 140, length.out = 30),
                  species = DataCham$Species,
-                 response = DataCham$logpter,
-                 direct.cov = DataCham$logbsl,
-                 mv.response = rep(0.02 * var(DataCham$logpter), length(ChamTree$tip.label)), #plus 5.5% intraspecific variation
-                 mv.direct.cov = rep(0.02 * var(DataCham$logbsl), length(ChamTree$tip.label))) #plus 5.5% intraspecific variation
+                 response = DataCham$logpter_mean,
+                 mv.response = DataCham$logpter_varmean,
+                 direct.cov = DataCham$logbsl_mean,
+                 mv.direct.cov = DataCham$logbsl_varmean
+)
+                 
 plot(m0)
 summary(m0)
 

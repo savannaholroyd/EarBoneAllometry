@@ -1,0 +1,29 @@
+#NEXUS
+[Data written by write.nexus.data.R, Thu Aug  8 11:48:05 2024]
+BEGIN DATA;
+  DIMENSIONS NTAX=20 NCHAR=1;
+  FORMAT DATATYPE=STANDARD MISSING=? GAP=- INTERLEAVE=NO symbols="0123456789";
+  MATRIX
+    Bpumilum            0
+    Bsuperciliaris      0
+    CAbrevicornis       0
+    Ccalyptratus        1
+    Cchamaeleon         1
+    Cdilepis            1
+    Cgracilis           1
+    Csenegalensis       1
+    Czeylanicus         1
+    Foustaleti          0
+    Fpardalis           1
+    Fverrucosus         0
+    Kfischeri           0
+    Tcristatus          1
+    Tellioti            0
+    Thoehnelii          0
+    Tjacksonii          0
+    Tjohnstoni          0
+    Tmelleri            1
+    Tmontium            1
+  ;
+END;
+

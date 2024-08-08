@@ -1,0 +1,29 @@
+#NEXUS
+[Data written by write.nexus.data.R, Thu Aug  8 11:47:58 2024]
+BEGIN DATA;
+  DIMENSIONS NTAX=20 NCHAR=1;
+  FORMAT DATATYPE=CONTINUOUS MISSING=? GAP=- INTERLEAVE=NO;
+  MATRIX
+    Bpumilum            0.113229457672528
+    Bsuperciliaris      0.129487212071041
+    CAbrevicornis       0.143094457075414
+    Ccalyptratus        0.0895673374267918
+    Cchamaeleon         0.0831054126729365
+    Cdilepis            0.0533778365098934
+    Cgracilis           0.022618790170543
+    Csenegalensis       0.03927115721992
+    Czeylanicus         0.0123118296411791
+    Foustaleti          0.0275398652116372
+    Fpardalis           0.0184205001909761
+    Fverrucosus         -0.0257808508214399
+    Kfischeri           -0.0195125667517408
+    Tcristatus          0.0199239538006786
+    Tellioti            0.00152217922136377
+    Thoehnelii          0.0411100453510058
+    Tjacksonii          -0.027321086097172
+    Tjohnstoni          -0.0841296522846477
+    Tmelleri            0.00340102421215027
+    Tmontium            -0.00801292289731337
+  ;
+END;
+
