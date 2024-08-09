@@ -48,16 +48,38 @@ DataSynOU <- DataSynOU[match(ttreeA$tip.label, DataSynOU$Species), ]
 ## Fit the model without a fixed factor for the selective regime because they're all the same regime
 tree_height <- max(node.depth.edgelength(ttreeA))
 
+#logRL -- within-species variance for Diictodon => 0.03689937
+#logJaw -- within-specie variance for Diictodon => 0.004258916
+
+DataSynOU$logRL_var <- 0.03689937
+DataSynOU$logJaw_var <- 0.004258916
+DataSynOU$logRL_sample_size <- 1
+DataSynOU[DataSynOU$Species == "Diictodon","logRL_sample_size"] <- 10
+DataSynOU$logJaw_sample_size <- 1
+DataSynOU[DataSynOU$Species == "Diictodon","logJaw_sample_size"] <- 10
+
+DataSynOU <- DataSynOU %>%
+  mutate(
+    "logRL_varmean" = logRL_var / logRL_sample_size,
+    "logJaw_varmean" = logJaw_var / logJaw_sample_size,
+         )
+
+
 
 m0 <- slouch.fit(phy = ttreeA,
                  hillclimb = T,
+                 a_values = seq(0.0001, 0.05, length.out = 45),
+                 sigma2_y_values = seq(0.00001, 0.004, length.out = 45),
                  #vy_values = seq(0.001, 0.15, length.out = 30),
                  #hl_values = seq(0.1, 150, length.out = 30),
                  species = DataSynOU$Species,
                  response = DataSynOU$logRL,
                  direct.cov = DataSynOU$logJaw,
-                 mv.response = rep(0.1 * var(DataSynOU$logRL), length(ttreeA$tip.label)), #plus 5.5% intraspecific variation
-                 mv.direct.cov = rep(0.1 * var(DataSynOU$logJaw), length(ttreeA$tip.label))) #plus 5.5% intraspecific variation
+                 mv.response = DataSynOU$logRL_varmean,
+                 mv.direct.cov = DataSynOU$logJaw_varmean,
+                 #mv.response = rep(0.1 * var(DataSynOU$logRL), length(ttreeA$tip.label)), #plus 5.5% intraspecific variation
+                 #mv.direct.cov = rep(0.1 * var(DataSynOU$logJaw), length(ttreeA$tip.label)) #plus 5.5% intraspecific variation
+)
 plot(m0)
 summary(m0)
 
