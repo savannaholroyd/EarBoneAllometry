@@ -45,7 +45,7 @@ df3 <- df2 %>%
     "logbsl_var" = NaN,
     "logbsl_varmean" = NaN,
   ) %>%
-  select(-logbsl, -logpter, -Specimen, -Regime) %>%
+  select(-logbsl, -logpter, -Specimen, -Regime, -Regime_label) %>%
   filter(!(Species %in% species_df$Species)) %>%
   mutate(
     "logpter_varmean" = !!logpter_var / 1.0, ## exclamation mark !! is to use the `logpter_var` variable from the global environment
@@ -55,7 +55,7 @@ df3 <- df2 %>%
 df4 <- bind_rows(df3, species_df)
 
 regimes_df <- df2 %>%
-  select(Species, Regime)
+  select(Species, Regime, Regime_label)
 
 
 df5 <- left_join(regimes_df, df4, by = "Species")
